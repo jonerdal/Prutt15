@@ -7,6 +7,8 @@ public class Labb1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		new MainFrame();
+
+		//Hej hej
 		
 
 	}
