@@ -7,31 +7,19 @@ public class MyNode {
 	private String name;
 	private String description;
 	private ArrayList<MyNode> children = new ArrayList<MyNode>();
-
 	
-	MyNode(String lvl, String n, String descr) {
+	public MyNode(String lvl, String n, String descr) {
 		level = lvl;
 		name = n;
 		description = descr;
 	}
 	
-	public String toString() {		
+	public String getName() {		
 		return name;
 	}
-	public String getLevel() {
-		return level;
-	}
+
 	public void addChild(MyNode child) {
 		children.add(child);
-	}
-	
-	public String getAllChildren() {
-		String str = "";
-		for ( MyNode x : children) {
-			str += x.toString();
-		}
-		return str;
-		
 	}
 	
 	public ArrayList<MyNode> getChildrenList() {
@@ -43,5 +31,7 @@ public class MyNode {
 		return level + ": " + name + " " + description;
 	}
 
-
+	public String getLevel() {
+		return level;
+	}
 }
