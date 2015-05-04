@@ -38,6 +38,7 @@ class DirTree2 extends TreeFrame {
 	if ( p == null )
 	    return;
 	File f = new File( p.getLastPathComponent().toString() );
+	System.out.println(p.getLastPathComponent().toString());
 	JOptionPane.showMessageDialog( this, f.getPath() + 
 				       "\n   " + 
 				       getAttributes( f ) );
